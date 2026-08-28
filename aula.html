@@ -72,135 +72,154 @@
       }
 
       .texto-normal {
-        font-family: Arial, sans-serif;
+        font-size: 16px;
+        color: #3a3d42;
+        margin-bottom: 12px;
       }
 
       .texto-destaque {
-        color: red;
+        font-size: 16px;
+        color: #dc2626;
         font-weight: bold;
+        margin-bottom: 12px;
       }
 
-      .texto-grande {
-        font-size: 20px;
+      .texto-destaque-Centro {
+        font-size: 22px;
+        color: #111827;
         text-align: center;
       }
 
-      .topico-titulo {
-        background-color: #ffffff;
-        padding: 24px 32px;
-        border-bottom: 2px solid #e5e7eb;
-        margin-bottom: 24px;
-      }
-
       .caixa-azul {
-        background-color: rgba(45, 72, 145, 0.329);
+        background-color: rgb(133, 184, 250);
         padding: 20px;
-        border: 5px solid blue;
-        margin: 10px;
+        border: 2px solid blue;
+        margin: 30px;
       }
 
       .caixa-amarela {
-        background-color: rgb(243, 183, 20);
+        background-color: rgb(231, 231, 67);
         padding: 20px;
-        border: 5px rgb(236, 18, 18) dashed;
-        margin: 10px;
+        border: 2px dashed;
+        margin: 30px;
       }
 
       .flex-linha {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 40px;
-      }
-
-      .item-flex {
         display: flex;
-        flex: 10px;
-      }
-
-      .item-vermelho {
-        background-color: red;
-        padding: 10px;
-        width: 40px;
-        border-radius: 10px;
-        font-size: 20px;
-        color: #111827;
-      }
-
-      .item-flex {
-        display: flex;
-        flex: 20px;
-      }
-
-      .item-verde {
-        background-color: green;
-        padding: 10px;
-        width: 40px;
-        border-radius: 10px;
-        font-size: 20px;
-        color: #111827;
-      }
-
-      .item-flex {
-        display: flex;
-        flex: 10px;
-      }
-
-      .item-azul {
-        background-color: rgb(47, 117, 221);
-        padding: 10px;
-        width: 40px;
-        border-radius: 10px;
-        font-size: 20px;
-        color: #111827;
-      }
-
-      .topico-descricao {
-        padding: 10px;
+        justify-content: space-around;
       }
 
       .flex-coluna {
-        display: grid;
-        grid: template rows 2px;
+        display: flex;
+        flex-direction: column;
         gap: 10px;
       }
 
-      .item-flex {
+      .item-flex.item-vermelho {
+        background-color: rgb(199, 53, 53);
+        color: white;
+        width: 75px;
+        height: 75px;
         display: flex;
-        flex: 10px;
-      }
-
-      .item-vermelho {
-        padding: 20px;
-        width: 66px;
+        align-items: center;
+        justify-content: center;
         border-radius: 10px;
-        font-size: 20px;
       }
 
-      .item-flex {
+      .item-flex.item-verde {
+        background-color: rgb(75, 212, 105);
+        color: white;
+        width: 75px;
+        height: 75px;
         display: flex;
-        flex: 10px;
-      }
-
-      .item-verde {
-        padding: 20px;
-        width: 66px;
+        align-items: center;
+        justify-content: center;
         border-radius: 10px;
-        font-size: 20px;
       }
 
-      .item-flex {
+      .item-flex.item-azul {
+        background-color: rgb(53, 116, 199);
+        color: white;
+        width: 75px;
+        height: 75px;
         display: flex;
-        flex: 10px;
-      }
-
-      .item-azul {
-        padding: 20px;
-        width: 66px;
+        align-items: center;
+        justify-content: center;
         border-radius: 10px;
-        font-size: 20px;
       }
 
-      .topico-descrica {
+      .grade {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+      }
+
+      .item-grade {
+        background-color: rgb(53, 116, 199);
+        color: white;
+        width: 150px;
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+      }
+
+      .bloco-visivel {
+        display: block;
+        background-color: rgb(133, 184, 250);
+        padding: 15px;
+        border: 2px solid blue;
+      }
+
+      .bloco-escondido {
+        display: none;
+        background-color: rgb(133, 184, 250);
+        padding: 20px;
+        border: 2px solid blue;
+        margin: 30px;
+      }
+
+      .barra-fixixa {
+        background-color: rgb(133, 184, 250);
+        padding: 15px;
+        border: 2px solid blue;
+        max-width: 250px;
+        margin-bottom: 10px;
+      }
+
+      .barra-porcentagem {
+        background-color: rgb(107, 255, 119);
+        padding: 15px;
+        border: 2px solid rgb(100, 255, 146);
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .barra-meia {
+        background-color: rgb(221, 255, 100);
+        padding: 15px;
+        border: 2px solid rgb(200, 255, 0);
+        width: 50%;
+      }
+
+      .caixa-posicao {
+        position: relative;
+        width: 600px;
+        margin-top: 20px;
+      }
+
+      .icone-lupa {
+        position: absolute;
+        left: 200px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .campo-busca {
+        width: 233px;
+        height: 35px;
+        border-radius: 10px;
         padding: 10px;
       }
     </style>
@@ -218,7 +237,7 @@
         <h2 class="topico-titulo">1. Cores e tipografia</h2>
         <p class="texto-normal">Este parágrafo usa a fonte padrão.</p>
         <p class="texto-destaque">Este texto está em negrito e vermelho.</p>
-        <p class="texto-grande">Este texto é maior e centralizado.</p>
+        <p class="texto-destaque-Centro">Este texto é maior e centralizado.</p>
       </section>
 
       <section class="topico">
@@ -291,4 +310,3 @@
     </footer>
   </body>
 </html>
-0,
