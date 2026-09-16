@@ -5,52 +5,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fundação Sonho Meu - Landing Page</title>
     <style>
-            .body {
-              font-family: "Segoe UI", "Renoto", "sans-serif";
-              line-height: 13px;
-              color: #3333;
-              background-color: #fefefe;
-            }
-            .hero {
-              position: absolute;
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-              align-items: center;
-              text-align: center;
-              padding:30px 20px;
-              min-height:85vh;
-            }
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #fff;
+      }
+      img {
+        max-width: 100%;
+        display: block;
+      }
+      a {
+        text-decoration: none;
+        display: inline-block;
+      }
+      h1,
+      h2,
+      h3 {
+        font-weight: bold;
+      }
+      .hero {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        overflow: hidden;
+      }
       .hero-imagem {
         position: absolute;
-        top:4;
-        left:100px;
-        height:100px;
-        width:100px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
         object-fit: cover;
-        z-index:-1px;
-        filter: brightness(0.8);
+        z-index: -1;
+        filter: brightness(0.6);
       }
       .hero-marca {
-        font-size:30rem;
-       color: #ffffff;
-      margin-bottom:16px;
+        font-size: 3rem;
+        margin-bottom: 1rem;
       }
       .hero-texto {
-        font-size:1px;
-        color: #f0f0f0;
-        max-width:700px;
-        margin-bottom: 32px;
-
+        font-size: 1.25rem;
+        max-width: 700px;
+        margin-bottom: 2rem;
+        padding: 0 1rem;
       }
       .hero-botao {
-        background-color: #ff7a3c;
-        color: #ffffff;
-        padding: 14px 32px;
+        background-color: #21c049;
+        color: white;
+        padding: 1rem 2rem;
         border-radius: 8px;
-        font-weight:60px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
       }
-       .
+      .hero-botao:hover {
+        background-color: #0b2712;
+      }
+      .secao-cards {
+        padding: 5rem 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .secao-titulo {
+        text-align: center;
+        font-size: 2.25rem;
+        margin-bottom: 0.5rem;
+        color: #1f2937;
+      }
+      .secao-subtitulo {
+        text-align: center;
+        font-size: 1.1rem;
+        color: #6b7280;
+        margin-bottom: 3rem;
+      }
+      .grade-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 2rem;
+      }
+      .card {
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+      }
+      .card-imagem {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+      .card-corpo {
+        padding: 1.5rem;
+      }
+      .card-titulo {
+        font-size: 1.5rem;
+        margin-bottom: 0.75rem;
+        color: #1f2937;
+      }
+      .card-texto {
+        color: #4b5563;
+        line-height: 1.7;
+      }
+
+      .secao-texto {
+        background-color: #f3f4f6;
+        padding: 5rem 2rem;
+      }
+      .texto-titulo {
+        text-align: center;
+        font-size: 2.25rem;
+        margin-bottom: 2rem;
+        color: #1f2937;
+      }
+      .texto-explicativo {
+        max-width: 800px;
+        margin: 0 auto 1.5rem;
+        font-size: 1.1rem;
+        color: #374151;
+        line-height: 1.8;
+      }
+
+      .rodape {
+        background-color: #1f2937;
+        color: white;
+        text-align: center;
+        padding: 2rem;
+        font-size: 0.95rem;
+      }
+
+      @media (max-width: 768px) {
+        .hero-marca {
+          font-size: 2rem;
+        }
+        .secao-titulo,
+        .texto-titulo {
+          font-size: 1.75rem;
+        }
+      }
     </style>
   </head>
   <body>
@@ -142,4 +248,3 @@
     </footer>
   </body>
 </html>
-https://docs.google.com/forms/d/e/1FAIpQLSdplHt22zSO2uRCItdgUUhlgEjttX-dt8VB1RphL1qRqzYTlg/viewform
